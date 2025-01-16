@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import AltTitle from "../components/AltTitle";
 import AboutCard from "../components/about/AboutCard";
 import AboutSectionsTitle from "../components/about/AboutSectionsTitle";
@@ -6,8 +6,8 @@ import { faBolt, faBook, faBriefcase, faCrown, faLandMineOn, faMasksTheater, faM
 import JoinSection from "../components/about/JoinSection";
 
 function AboutUs() {
-  const arr = [1, 1, 1, 1];
-  const [achieve, setAchieve] = useState([
+  
+  const achieve = [
     {
       icon: faCrown,
       head: "Trusted by Thousands",
@@ -28,9 +28,9 @@ function AboutUs() {
       head: "Industry Partnerships",
       text: "We have established strong partnerships with industry leaders, enabling us to provide our students with access to the latest tools and technologies",
     },
-  ]);
+  ];
 
-  const [goals, setGoals] = useState([
+  const goals = [
     {
       icon: faBriefcase,
       head: "Provide Practical Skills",
@@ -51,7 +51,7 @@ function AboutUs() {
       head: "Stay Ahead of the Curve",
       text: "The digital landscape is constantly evolving, and we strive to stay at the forefront of industry trends. We regularly update our course content to ensure our students receive the latest knowledge and skills",
     },
-  ]);
+  ];
   return (
     <Fragment>
       <AltTitle

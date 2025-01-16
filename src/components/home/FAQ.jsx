@@ -1,12 +1,11 @@
-import React from 'react'
-import { HashLink } from 'react-router-hash-link';
-import FAQCard from '../FAQCard';
+import React from "react";
+import { HashLink } from "react-router-hash-link";
+import FAQCard from "../FAQCard";
 
 function FAQ() {
-  const arr = [1,1,1,1]
   return (
     <div className="my-20 p-8 md:p-16 bg-white rounded-md flex flex-col md:flex-row gap-8 md:gap-0 justify-between">
-      <div className="flex flex-col gap-5">
+      <div className="flex-1 flex flex-col gap-5">
         <h2 className="text-slate-800 text-xl md:text-3xl font-bold">
           Frequently Asked Questions
         </h2>
@@ -20,13 +19,11 @@ function FAQ() {
           See All FAQ's
         </HashLink>
       </div>
-      <div className="flex flex-col gap-5">
-        {arr.map((e, id) => (
-          <FAQCard key={id} />
-        ))}
+      <div className="flex-1 flex flex-col gap-5">
+        <FAQCard />
       </div>
     </div>
   );
 }
 
-export default FAQ
+export default FAQ;
