@@ -7,7 +7,7 @@ function MainLayout() {
   return (
       <>
           <Header />
-          <div className="container mx-auto">
+          <div className="container px-3 mx-auto">
             <Outlet/>
           </div>
           <Footer/>
